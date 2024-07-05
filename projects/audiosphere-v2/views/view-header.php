@@ -58,8 +58,9 @@
                     <li><a href="../views/view-search.php">search</a></li>
                     <li><a href="../index.php">home</a></li>
                     <li><a href="../views/view-myplaylist.php">my playlist</a></li>
+                    <li>about us</li>
 
-                    <div>
+                    <!-- <div>
                         <li>featured stories</li>
                         <li>new release</li>
                         <li>discover</li>
@@ -70,9 +71,8 @@
                     </div>
                     <div>
                         <li>FAQ</li>
-                        <li>about us</li>
                         <li>create</li>
-                    </div>
+                    </div> -->
                 </ul>
                 <label for="menu_toggle" class="close_icon"></label>
             </nav>

@@ -284,6 +284,7 @@ button,
 #sidebar li {
     margin: var(--margin_small) 0;
     font-size: clamp(var(--min-text-font-size), var(--preferred-text-font-size), var(--max-text-font-size));
+    text-transform: capitalize;
 }
 
 #sidebar li a {
