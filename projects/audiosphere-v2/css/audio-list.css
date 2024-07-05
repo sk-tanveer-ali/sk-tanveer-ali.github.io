@@ -1,0 +1,237 @@
+/* RESET */
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/*
+  9. Remove default button styles
+*/
+button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* VARIABLES */
+:root {
+    /* colors */
+    --background-color-dark_mode: #232946;
+    --headline-color-dark_mode: #fffffe;
+    --paragraph-color-dark_mode: #b8c1ec;
+    --button-color-dark_mode: #eebbc3;
+    --button-text-color-dark_mode: #232946;
+    --link-color-dark_mode: ;
+
+
+    --stroke-color-dark_mode: #121629;
+    --main-color-dark_mode: #b8c1ec;
+    --highlight-color-dark_mode: #eebbc3;
+    --primary-color-dark_mode: #fffffe;
+    --secondary-color-dark_mode: #eebbc3;
+
+
+    --background-color: #d4d8f0;
+    --headline-color: #232946;
+    --paragraph-color: #232946;
+    --card-background-color: #fffffe;
+    --button-color: #eebbc3;
+    --button-text-color: #232946;
+    --link-color: #232946;
+
+
+    --stroke-color: #121629;
+    --main-color: #b8c1ec;
+    --highlight-color: #eebbc3;
+    --primary-color: #fffffe;
+    --secondary-color: #eebbc3;
+
+
+    /* heading font-size */
+    --min-heading-font-size: 1.5rem;
+    --preferred-heading-font-size: 2.5vw;
+    --max-heading-font-size: 2rem;
+
+    /* paragraph font-size */
+    --min-text-font-size: 0.875rem;
+    --preferred-text-font-size: 1.5vw;
+    --max-text-font-size: 1.125rem;
+
+
+    /* medium heading font-size */
+    --min-font-size: 1rem;
+    --preferred-font-size: 2vw;
+    --max-font-size: 1.5rem;
+
+    /* spacing */
+    --padding_xsmall: 0.25em;
+    --padding_small: 0.5em;
+    --padding_medium: 1em;
+    --padding_large: 1.5em;
+    --padding_xlarge: 2em;
+
+    --margin_small: 0.5em;
+    --margin_medium: 1em;
+    --margin_large: 1.5em;
+    --margin_xlarge: 2em;
+    --margin_base: 1em;
+
+    --gap_small: 0.5em;
+    --gap_medium: 1em;
+    --gap_large: 1.5em;
+    --gap_xlarge: 2em;
+
+    --grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+/* GENERAL */
+
+
+
+/* AUDIO LIST */
+
+.audio_list_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--gap_large);
+}
+
+
+/* CARD */
+.audio_card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap_large);
+
+    border-radius: 10px;
+    padding: var(--padding_large);
+    margin-bottom: var(--margin_medium);
+
+    background-color: var(--background-color-dark_mode);
+    color: var(--paragraph-color-dark_mode);
+
+    font-size: clamp(var(--min-text-font-size), var(--preferred-text-font-size), var(--max-text-font-size));
+}
+
+.card_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: var(--margin_medium);
+}
+
+.card_header h3 {
+    margin: 0;
+    font-size: clamp(var(--min-text-font-size), var(--preferred-text-font-size), var(--max-text-font-size));
+    text-transform: uppercase;
+}
+
+.favorite {
+    background-color: var(--button-color-dark_mode);
+    color: var(--button-text-color-dark_mode);
+    border-radius: 16px;
+    padding: var(--padding_xsmall) var(--padding_large);
+    font-weight: 500;
+}
+
+.card_img {
+    width: 30%;
+}
+
+.card_info {
+    width: 70%;
+}
+
+.clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--gap_small);
+    margin-top: var(--margin_small);
+}
+
+
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 768px) {
+    .audio_list_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

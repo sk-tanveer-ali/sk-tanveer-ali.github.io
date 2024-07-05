@@ -1,0 +1,963 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+section{
+	padding: 100px 0;
+}
+
+body{
+	font-family: 'Roboto', sans-serif;
+	background: #fcf3ea;
+}
+
+
+.container{
+	max-width: 1000px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/*====== HEADER ======*/
+
+
+.main-header{
+	position: fixed;
+	width: 100%;
+}
+
+.header-flex{
+	display: flex;
+	height: 80px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+img{
+	max-width: 100%;
+	display: block;
+}
+
+.logo{
+	width: 200px;
+}
+
+.burger{
+	display: none;
+}
+
+.nav-list{
+	list-style: none;
+	display: flex;
+	gap: 40px;
+}
+
+.nav-list a{
+	font-family: 'Quicksand', sans-serif;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 16px;
+}
+
+.nav-list a:hover{
+	text-shadow: 0 0 4px cyan;
+}
+
+.main-header.has-bg{   /*js*/
+	background: #1f3933;
+}
+
+
+/*====== BIG BANNER ======*/
+
+
+.big-banner{
+	background: url(images/backgrounds/big-banner4.jpg) rgba(0, 0, 0, 0.4);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: overlay;
+	min-height: 600px;
+	display: flex;
+	align-items: flex-end;
+}
+
+
+.big-banner .textbox h1{
+	font-family: 'Alumni Sans', sans-serif;
+	text-shadow: 0 0 4px cyan;
+	font-size: 60px;
+	width: 400px;
+	color:#ffffff;
+	margin-bottom: 20px;
+}
+
+.big-button{
+	font-family: 'Quicksand', sans-serif;
+	background-color: #1f3933;
+	padding: 5px 20px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 18px;
+	color: #ffffff;
+	display: inline-block;
+	border: 2px solid #ffffff;
+	transition: 0.25s;
+}
+
+.big-button:hover{
+	text-shadow: 0 0 4px cyan;
+	border: 2px solid #eab676;
+}
+
+
+/*====== PRODUCT SECTION======*/
+
+
+/*--- big-cards ----*/
+.big-card-flex{
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+	margin-top: -140px;
+}
+
+.big-card-flex .card{
+	width: calc((100% - 60px) / 3);
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: 250px;
+	border: 5px solid #ffffff;
+	transition: 0.5s;
+}
+
+.big-card-flex .card:hover{
+	border: 5px solid #1f3933;
+}
+
+.big-card-flex .card .grey-box{
+	background: rgba(31, 57, 51, 0%);
+	color: #ffffff;
+	text-align: center;
+	opacity: 0%;
+	height: 30%;
+	width: 100%;
+	padding: 25px 0;
+	transition: 0.5s;
+}
+
+.big-card-flex .card:hover .grey-box{
+	background: rgba(31, 57, 51, 50%);
+	opacity: 100%;
+	height: 40%;
+}
+
+.big-card-flex .card:hover .grey-box h3{
+	color: #ffffff;
+}
+
+.big-card-flex .card .grey-box h3{
+	font-family: 'Alumni Sans', sans-serif;
+	font-size: 20px;
+}
+
+.big-card-flex .image1{
+	background: url(images/products/latte.jpg) rgba(0, 0, 0, 0.0);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: overlay;	
+}
+
+.big-card-flex .image2{
+	background: url(images/products/esp.jpg) rgba(0, 0, 0, 0.0);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: overlay;
+}
+
+.big-card-flex .image3{
+	background: url(images/products/cappu.jpg) rgba(0, 0, 0, 0.0);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: overlay;
+}
+
+.product .textbox{
+	margin-top: 100px;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.product .textbox h1{
+	font-family: 'Alumni Sans', sans-serif;
+	font-size: 40px;
+	margin-bottom: 10px;
+}
+
+.product .textbox p{
+	line-height: 1.2;
+}
+
+/*--- small-cards ----*/
+
+.best-selling-flex{
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+}
+
+.best-selling-flex .card{
+	width: calc((100% - 100px) / 5);
+}
+
+.best-selling-flex .card .img{
+	width: 100%;
+	height: 150px;
+}
+
+.best-selling-flex .card .image1{
+	background-image: url(images/products/caffe-misto.jpg);
+	background-position: center;
+	background-size: cover;
+	border: 3px solid transparent;
+	transition: 0.5s;
+}
+
+.best-selling-flex .card .image1:hover{
+	border: 3px solid #eab676;
+}
+
+.best-selling-flex .card .image2{
+	background-image: url(images/products/oat-americano.jpg);
+	background-position: center;
+	background-size: cover;
+	border: 3px solid transparent;
+	transition: 0.5s;
+}
+
+.best-selling-flex .card .image2:hover{
+	border: 3px solid #eab676;
+}
+
+.best-selling-flex .card .image3{
+	background-image: url(images/products/cappuccino.jpg);
+	background-position: center;
+	background-size: cover;
+	border: 3px solid transparent;
+	transition: 0.5s;
+}
+
+.best-selling-flex .card .image3:hover{
+	border: 3px solid #eab676;
+}
+
+.best-selling-flex .card .image4{
+	background-image: url(images/products/oat-latte.jpg);
+	background-position: center;
+	background-size: cover;
+	border: 3px solid transparent;
+	transition: 0.5s;
+}
+
+.best-selling-flex .card .image4:hover{
+	border: 3px solid #eab676;
+}
+
+.best-selling-flex .card .image5{
+	background-image: url(images/products/caffe-mocha.jpg);
+	background-position: center;
+	background-size: cover;
+	border: 3px solid transparent;
+	transition: 0.5s;
+}
+
+.best-selling-flex .card .image5:hover{
+	border: 3px solid #eab676;
+}
+
+ .best-selling-flex .card h5{
+	color: grey;
+	font-style: italic;
+}
+
+/*====== CTA BANNER ======*/
+
+.cta-banner{
+	background: url(images/backgrounds/cta-banner.jpg) rgba(0, 0, 0, 0.2);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: overlay;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cta-banner .container{
+	max-width: 500px;
+}
+
+.cta-textbox{
+	text-align: center;
+	color: white;
+}
+
+.cta-textbox h1{
+	font-family: 'Alumni Sans', sans-serif;
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+.cta-textbox p{
+	margin-bottom: 30px;
+}
+
+.cta-btn{
+font-family: 'Quicksand', sans-serif;
+	background-color: #1f3933;
+	padding: 10px 20px;
+	text-decoration: none;
+	display: inline-block;
+	color: white;
+	border: 2px solid;
+	transition: 0.5s;
+}
+
+.cta-btn:hover{
+	border: 2px solid #1f3933;
+	color: #eab676;
+}
+
+
+/*====== GALLERY ======*/
+
+.gallery{
+	background: url(images/backgrounds/beans-bg.jpg) rgba(0, 0, 0, 0.1);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: overlay;
+}
+
+.gallery .container h3{
+	font-family: 'Alumni Sans', sans-serif;
+	text-shadow: 0 0 1px #ffffff;
+	color: #1f3933;
+	font-size: 40px;
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.gallery-flex{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+}
+
+.gallery-flex .left{
+	width: 50%;
+}
+
+.gallery-flex .left .image1{
+	background: url(images/gallery/1.jpg);
+	background-position: center;
+	background-size: cover;
+	border: 5px solid  #ffffff;
+	height: 500px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: flex-end;
+	transition: 0.5s;
+}
+
+.gallery-flex .left .image2{
+	background: url(images/gallery/4.jpg);
+	background-position: center;
+	background-size: cover;
+	border: 5px solid  #ffffff;
+	height: 300px;
+	display: flex;
+	align-items: flex-end;
+	transition: 0.5s;
+}
+
+.gallery-flex .right{
+	width: 50%;
+}
+
+.gallery-flex .right .image1{
+	background: url(images/gallery/3.jpg);
+	background-position: center;
+	background-size: cover;
+	border: 5px solid  #ffffff;
+	height: 300px;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: flex-end;
+	transition: 0.5s;
+}
+
+.gallery-flex .right .image2{
+	background: url(images/gallery/2.jpg);
+	background-position: center;
+	background-size: cover;
+	border: 5px solid  #ffffff;
+	height: 500px;
+	display: flex;
+	align-items: flex-end;
+	transition: 0.5s;
+}
+
+.gallery-flex .img:hover{
+	border: 5px solid #1f3933;
+}
+
+.gallery-flex .grey-box{
+	background: rgba(31, 57, 51, 0%);
+	color: #ffffff;
+	text-align: center;
+	opacity: 0%;
+	height: 30%;
+	width: 100%;
+	padding: 10px 0;
+	transition: 0.5s;
+}
+
+.gallery-flex .img:hover .grey-box{
+	background: rgba(37, 57, 51, 60%);
+	opacity: 100%;
+	height: 40%;
+}
+
+.gallery-flex .grey-box h3{
+	color: #ffffff;
+}
+
+
+/*====== MORE PRODUCT ======*/
+
+
+.freshers-flex{
+	display: flex;
+	justify-content: space-between;
+	gap: 10px;
+}
+
+.freshers-flex .card{
+	width: calc((100% - 30px) / 4);
+	height: 250px;
+}
+
+
+.freshers-flex .text-card{
+	width: 50%;
+}
+
+.freshers-flex .text-card h2{
+	margin-bottom: 20px;
+}
+
+.freshers-flex .text-card p{
+	margin-bottom: 20px;
+	font-weight: 200;
+}
+
+.freshers-flex .text-card .nav-arrow-flex{
+	display: flex;
+	gap: 10px;
+}
+
+.freshers-flex .text-card .left-arrow-bg{
+	background: #1f3933;
+	width: 50px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid white;
+}
+
+.freshers-flex .text-card .left-arrow-bg:hover{
+	border: 2px solid #1f3933;
+}
+
+.freshers-flex .text-card .right-arrow-bg{
+	background: #1f3933;
+	width: 50px;
+	height: 35px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid white;	
+}
+
+.freshers-flex .text-card .right-arrow-bg:hover{
+	border: 2px solid #1f3933;
+}
+
+.freshers-flex .fa-arrow-left,.fa-arrow-right{
+	color: #ffffff;
+}
+
+.freshers-flex .image1{
+	background: url(images/products/strawberry.jpg);
+	background-size: cover;
+	background-position: center;
+	border: 3px solid transparent;
+}
+
+.freshers-flex .image1:hover{
+	border: 3px solid #eab676;
+}
+
+.freshers-flex .image2{
+	background: url(images/products/pineapple.jpg);
+	background-size: cover;
+	background-position: center;
+	border: 3px solid transparent;
+}
+
+.freshers-flex .image2:hover{
+	border: 3px solid #eab676;
+}
+
+.freshers-flex .image3{
+	background: url(images/products/orange.jpg);
+	background-size: cover;
+	background-position: center;
+	border: 3px solid transparent;
+}
+
+.freshers-flex .image3:hover{
+	border: 3px solid #eab676;
+}
+
+
+/*====== FOOTER ======*/
+
+ul{
+	list-style: none;
+}
+
+.footer{
+	background: #1f3933;
+	color: #ffffff;
+}
+
+.footer-flex{
+	display: flex;
+	justify-content: space-between;
+	gap: 30px;
+}
+
+.footer-flex .card{
+	width: calc((100% - 90px) / 3);
+}
+
+.footer-flex .card h4{
+	margin-bottom: 20px;
+}
+
+.footer-flex .card p{
+	font-size: 14px;
+	font-weight: 200;
+	color: grey;
+	margin-bottom: 30px;
+}
+
+.footer-flex .icon-flex{
+	display: inline-flex;
+	gap: 10px;
+}
+
+.footer-flex .fa-twitter,.fa-facebook-f,.fa-instagram{
+	font-size: 15px;
+}
+
+.footer-flex .card .icon{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 1px grey solid;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer-flex .card .icon:hover{
+	border: 3px grey solid;
+}
+
+.footer .card2 h5{
+	color: grey;
+	margin-bottom: 0px;
+}
+
+.footer .card2 p{
+	color: #ffffff;
+}
+
+.footer .card3 h5{
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+	font-weight: 200;
+	margin-bottom: 10px;
+}
+
+.footer .card3 a:hover{
+	font-weight: 500;
+}
+
+.footer .card3 a{
+	font-family: 'Roboto', sans-serif;
+	color: #ffffff;
+}
+
+
+/*==================== DYNAMIC ======================*/
+
+@media only screen and (max-width: 780px){
+	section{
+		padding: 50px 0;
+	}
+
+	img{
+		max-width: 80%;
+	}
+
+	.burger{
+		display: block; 
+		color: #ffffff;
+	}
+
+	nav{
+		display: none;
+	}
+
+	.big-banner{
+		min-height: 400px;
+	}
+
+	.big-banner .textbox h1{
+		font-size: 50px;
+		width: 300px;
+	}
+
+	.big-button{
+		padding: 5px 15px;
+		font-size: 16px;
+	}
+
+	/*=== PRODUCT ===*/
+
+	.big-card-flex{
+		margin-top: -70px;
+		gap: 15px;
+	}
+
+	.big-card-flex .card{
+		width: calc((100% - 30px) / 3);
+		height: 200px;
+		border: 3px solid #ffffff;
+		transition: 0.5s;
+ 	}
+
+	.big-card-flex .card:hover{
+		border: 3px solid #1f3933;
+	}
+
+	.product .textbox{
+		margin-top: 60px;
+		margin-bottom: 40px;
+	}
+
+
+	.best-selling-flex .card .img{
+		width: 100%;
+		height: 100px;
+	}
+
+	 .best-selling-flex .card h4{
+	 	font-size: 14px;
+	 }
+
+	 /*=== CTA ===*/
+
+	 .cta-banner{
+	 	height: 300px;
+	 }
+
+	 .cta-textbox h1{
+		font-size: 40px;
+		margin-bottom: 10px;
+	}
+
+	.cta-textbox p{
+		margin-bottom: 20px;
+	}
+
+	.cta-btn{
+		padding: 8px 16px;
+		font-size: 16px;
+	}
+    
+     /*=== GALLERY ===*/
+
+	.gallery .container h3{
+		margin-bottom: 30px;
+	}
+
+	.gallery-flex .left .image1{
+		height: 400px;
+		margin-bottom: 15px;
+	}
+
+	.gallery-flex .left .image2{
+		height: 200px;
+	}
+
+	.gallery-flex .right .image1{
+		height: 200px;
+		margin-bottom: 15px;
+	}
+
+	.gallery-flex .right .image2{
+		height: 400px;
+	}
+
+	 /*=== FRESHERS ===*/
+
+	.freshers-flex .card{
+		height: 200px;
+	}
+}
+
+
+@media only screen and (max-width: 500px){
+	section{
+		padding: 30px 0;
+	}
+
+	.header-flex{
+		height: 60px;
+	}
+
+	.big-banner{
+		min-height: 300px;
+	}
+
+	.big-banner .textbox h1{
+		font-size: 35px;
+		width: 200px;
+	}
+
+	.big-button{
+		padding: 3px 9px;
+		font-size: 14px;
+		border: 1px solid white;
+	}
+
+	.big-button:hover{
+		border: 1px solid #eab676;
+	}
+
+
+	/*=== PRODUCT ===*/
+
+	.big-card-flex{
+		margin-top: -40px;
+		gap: 10px;
+	}
+
+	.big-card-flex .card{
+		width: calc((100% - 20px) / 3);
+		height: 120px;
+		border: 2px solid #ffffff;
+ 	}
+
+	.big-card-flex .card:hover{
+		border: 2px solid #1f3933;
+	}
+
+	.big-card-flex .card .grey-box{
+		padding: 10px 0;
+	}
+
+	.big-card-flex .card .grey-box h3{
+		font-size: 14px;
+	}	
+
+	.product .textbox{
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.product .textbox h1{
+		font-size: 30px;
+	}
+
+	.product .textbox p{
+		font-size: 14px;
+	}
+
+	.best-selling-flex{
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+	}
+
+	.best-selling-flex .card .img{
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.best-selling-flex .card{
+		width: calc((100% - 20px) / 3);
+		text-align: center;
+	}
+
+	.best-selling-flex .card .img{
+		width: 70%;
+		height: 80px;
+	}
+
+	.best-selling-flex .card h4{
+	 	font-size: 14px;
+	 }
+
+	/*=== CTA ===*/
+
+	.cta-banner{
+	 	height: 200px;
+	 }
+
+	.cta-textbox h1{
+		font-size: 35px;
+		margin-bottom: 10px;
+	}
+
+	.cta-textbox p{
+		margin-bottom: 14px;
+	}
+
+	.cta-btn{
+		padding: 6px 10px;
+		font-size: 14px;
+	}
+
+	/*=== GALLERY ===*/
+
+	.gallery .container h3{
+		font-size: 30px;
+		margin-bottom: 30px;
+	}
+
+	.gallery-flex{
+		gap: 10px;
+	}
+	.gallery-flex .left .image1{
+		height: 300px;
+		margin-bottom: 10px;
+	}
+
+	.gallery-flex .left .image2{
+		height: 150px;
+	}
+
+	.gallery-flex .right .image1{
+		height: 150px;
+		margin-bottom: 10px;
+	}
+
+	.gallery-flex .right .image2{
+		height: 300px;
+	}
+
+
+	/*=== FRESHERS ===*/
+
+
+	.freshers-flex{
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 10px;
+	}
+
+	.freshers-flex .card{
+		width: calc((100% - 10px) / 2);
+		height: 150px;
+	}
+
+	.freshers-flex .text-card h2{
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+
+	.freshers-flex .text-card p{
+		margin-bottom: 10px;
+		font-size: 13px;
+		font-weight: 200;
+	}
+
+	.freshers-flex .text-card .nav-arrow-flex{
+		display: flex;
+		gap: 5px;
+	}
+
+	.freshers-flex .text-card .left-arrow-bg{
+		width: 40px;
+		height: 25px;	
+	}
+
+	.freshers-flex .text-card .right-arrow-bg{
+		width: 40px;
+		height: 25px;	
+	}
+
+
+	/*=== FOOTER ===*/
+
+	.footer-flex{
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.footer-flex .card{
+		width: 100%;
+	}
+
+	.footer-flex .card h4{
+		font-size: 14px;
+		margin-bottom: 10px;
+	}
+
+	.footer-flex .card p{
+		margin-bottom: 10px;
+	}
+
+	.footer-flex .card .icon{
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		border: 1px grey solid;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,867 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0552;
+  color: white;
+}
+
+.container-fluid {
+  max-width: 1000px;
+  width: 90%;
+}
+
+.container {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/**********NAV-BAR***********/
+
+.navbar {
+  background-color: #08003c !important;
+}
+
+.navbar-toggler {
+  background-color: white;
+}
+
+.nav-link {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.nav-link:hover {
+  color: #ff6900;
+}
+
+/*******MAIN_BANNER*******/
+
+.banners {
+  position: relative;
+}
+
+.banner-holder {
+  height: 100vh;
+}
+
+.banner1 {
+  background: url(images/audi.png) rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.banner2 {
+  background: url(images/mercedes.png) rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.banner3 {
+  background: url(images/audi2.png) rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.banner4 {
+  background: url(images/bmw2.png) rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.textbox {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.textbox h1 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 60px;
+}
+
+.textbox p {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 30px;
+}
+
+.textbox .button {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 25px;
+  letter-spacing: 1.5;
+  background-color: #f80d76;
+  color: white;
+  border-radius: 0;
+  border: 0;
+  padding: 8px 20px;
+  transition: 0.25s;
+}
+
+.textbox .button:hover {
+  background-color: #ff6900;
+}
+
+/*******ABOUT*******/
+
+.about {
+  padding: 80px 0;
+  background-color: #08003c;
+  position: relative;
+}
+
+.about .image {
+  background: url(images/success.jpg) rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  height: 500px;
+  position: relative;
+}
+
+.about .video {
+  background-color: #ff6900;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 3%;
+  bottom: 3%;
+  animation: 2s video linear infinite;
+}
+
+.about .video:hover {
+  cursor: pointer;
+}
+
+@keyframes video {
+  0% {
+    opacity: 0.5;
+    scale: 1;
+  }
+
+  50% {
+    opacity: 1;
+    scale: 1.1;
+  }
+
+  100% {
+    opacity: 0.5;
+    scale: 1;
+  }
+}
+
+.about .video .play {
+  font-size: 30px;
+}
+
+.about h6 {
+  font-family: "Alumni Sans", sans-serif;
+  color: #ff6900;
+  font-size: 30px;
+  position: relative;
+}
+
+.about h5 {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  position: relative;
+}
+
+.about h5 span {
+  color: #ff6900;
+  position: relative;
+}
+
+.about .icon {
+  color: #ff6900;
+  font-size: 30px;
+  position: relative;
+}
+
+.about h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  position: relative;
+}
+
+.about p {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.about h4 {
+  font-family: "PT Sans Caption", sans-serif;
+  color: #ff6900;
+  position: relative;
+}
+
+/* styles.css */
+
+.shape-box {
+  width: 200px; /* Adjust the width as needed */
+  height: 100px; /* Adjust the height as needed */
+  background-color: #007bff; /* Background color for the trapezoid side */
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*    z-index: -1;*/
+  width: 50%;
+  height: 100%;
+  background-color: #0f0552;
+  transform: skewX(-20deg);
+}
+
+/*******BUY-SELL*******/
+
+.buy-sell {
+  padding: 50px 0;
+  background-color: #08003c;
+}
+
+.buy-sell .card1 {
+  background: url(images/bmw.png) rgba(8, 0, 60, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  height: 350px;
+  transition: 1s ease;
+}
+
+.buy-sell .card1:hover {
+  background: url(images/bmw.png) rgba(8, 0, 60, 0.8);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.buy-sell .card2 {
+  background: url(images/used3.jpg) rgba(8, 0, 60, 0.5);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  height: 350px;
+  transition: 1s ease;
+}
+
+.buy-sell .card2:hover {
+  background: url(images/used3.jpg) rgba(8, 0, 60, 0.8);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+}
+
+.buy-sell .bs {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.card-bs {
+  font-family: "Quicksand", sans-serif;
+  height: 300px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  transition: 1s ease;
+}
+
+.card-bs h2 {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+.card-bs p {
+  font-family: "Roboto", sans-serif;
+}
+
+.card-bs h2,
+.card-bs p,
+.card-bs button {
+  transition: 0.5s ease;
+}
+
+.card-bs:hover h2 {
+  transform: translateX(-20px);
+}
+
+.card-bs:hover p {
+  transform: translateX(-20px);
+  transition-delay: 0.2s;
+}
+
+.card-bs:hover button {
+  transform: translateX(-20px);
+  transition-delay: 0.4s;
+}
+
+.buy-sell .info {
+  color: white;
+}
+
+.buy-sell .btn {
+  background-color: #fe4c28;
+  color: white;
+  border-radius: 0;
+  padding: 5px 15px;
+}
+
+/******PRODUCTS******/
+
+.products {
+  padding: 40px 0;
+}
+
+.card {
+  background-color: #0f0552 !important;
+  border: 0;
+}
+
+.card .btn {
+  border: 1px solid #f80d76;
+  color: #f80d76;
+  transform: 0.25s;
+}
+
+.card .btn:hover {
+  color: white;
+  background-color: #fe4c28;
+}
+
+.products h2 {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 40px;
+}
+
+.products .btn:hover {
+  animation: 1s btn linear infinite;
+}
+
+@keyframes btn {
+  0% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(5px);
+  }
+
+  50% {
+    transform: translateX(0px);
+  }
+
+  75% {
+    transform: translateX(-5px);
+  }
+
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+/************ SLICK-SLIDERS INVENTORY ************/
+
+.inventory {
+  background-color: #08003c;
+  padding: 50px 0;
+}
+
+.inventory h2 {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 40px;
+}
+
+.inventory .slick-slide {
+  margin: 10px 10px;
+}
+
+.inventory .slick-arrow {
+  position: absolute;
+  z-index: 1;
+  background-color: #fe4c28;
+  width: 40px;
+  height: 40px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.inventory .slick-arrow:hover {
+  background: darkorange;
+}
+
+.inventory .slick-arrow:before {
+  content: url(https://cdn-icons-png.flaticon.com/512/32/32213.png);
+  transform: translate(-50%, -50%) scale(0.04);
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.inventory .slick-prev {
+  right: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%) scaleX(-1);
+}
+
+.inventory .slick-next {
+  left: calc(100% + 10px);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.inventory .item {
+  /*	box-shadow: 0px 0px 10px;*/
+  /*	border-radius: 10px;*/
+  padding: 5px 5px;
+  background-color: #0f0552;
+}
+
+.car-details {
+  padding: 15px 20px;
+}
+
+.car-details .btn {
+  color: white;
+  background-color: #f80d76;
+  border-radius: 0;
+  padding: 3px 15px;
+  font-size: 14px;
+  transition: 0.25;
+}
+
+.car-details .btn:hover {
+  background-color: #fe4c28;
+}
+
+.car-details h5 {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  margin-bottom: 0px !important;
+}
+
+.car-details h4 {
+  font-family: "Roboto", sans-serif;
+  background-color: #ff6900;
+  padding: 3px 10px;
+  border-width: 40px 20px 40px 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.car-details p {
+  font-style: italic;
+  font-size: 14;
+}
+
+.price {
+  color: #ff6900;
+}
+
+/***********LOGO-SLIDER***************/
+
+.logo-slick img {
+  height: 60px;
+}
+
+/************* WHY-US *****************/
+
+.why-us {
+  background-color: #08003c;
+  padding: 80px 0;
+}
+
+.why-card {
+  background-color: #0f0552;
+  border: 10px solid #08003c;
+  transition: 0.7s;
+}
+
+.why-card h4,
+.why-card p,
+.why-card .icon {
+  transition: 0.7s ease;
+}
+
+.why-card:hover h4 {
+  transform: translateY(-5px);
+  color: black;
+}
+
+.why-card:hover p {
+  transform: translateY(-5px);
+}
+
+.why-card:hover .icon {
+  transform: translateY(-5px);
+  color: white;
+}
+
+.why-card:hover {
+  background-color: #ff6900;
+}
+
+.why-us .image {
+  background-image: url(images/ad-white.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.why-us h6 {
+  font-family: "Alumni Sans", sans-serif;
+  color: #ff6900;
+  font-size: 30px;
+}
+
+.why-us h2 {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 60px;
+}
+
+.why-us p {
+  font-family: "Roboto", sans-serif;
+}
+
+.why-us h4 {
+  font-family: "PT Sans Caption", sans-serif;
+  color: #ff6900;
+}
+
+.why-us .icon {
+  color: #ff6900;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+/********** TESTIMONIAL ***********/
+
+.testimonials {
+  padding: 50px 0;
+  position: relative;
+}
+
+.testimonials h6 {
+  font-family: "Alumni Sans", sans-serif;
+  color: #ff6900;
+  font-size: 30px;
+  position: relative;
+}
+
+.testimonials h2 {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 50px;
+  font-weight: 300;
+  position: relative;
+}
+
+.testimonials p {
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+
+.testimonials .image {
+  background: url(images/happy.jpg) rgba(0, 0, 0, 0);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  height: 500px;
+}
+
+.testimonials .icon {
+  color: #ff6900;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.testimonials .customers {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.testimonials .customers .pic img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.testimonials .customers .name h3 {
+  font-family: "Rajdhani", sans-serif;
+}
+
+.testimonials .customers .name p {
+  color: #ff6900;
+  margin-bottom: 0;
+}
+
+.testimonials .info {
+  background-color: #08003c;
+  padding: 20px 20px;
+}
+
+.testimonials::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 104px;
+  width: 50%;
+  height: 100%;
+  background-color: #0f0552;
+  transform: skewX(-20deg);
+}
+
+/********** FOOTER ****************/
+
+footer {
+  background: url(images/dial2.jpg) rgba(0, 0, 0, 0.8);
+  background-size: cover;
+  background-position: bottom;
+  background-blend-mode: overlay;
+}
+
+footer .underline {
+  background-color: #ff6900;
+  width: 30px;
+  height: 3px;
+  margin-bottom: 10px;
+}
+
+footer .icon {
+  color: #ff6900;
+}
+
+footer h5 {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+footer p {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 18px;
+}
+
+footer a {
+  font-family: "Alumni Sans", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  color: white;
+}
+
+footer a:hover {
+  color: #ff6900;
+}
+
+footer .form-control {
+  border-radius: 0;
+}
+
+footer .button {
+  background-color: #f80d76;
+  border: 0;
+  padding: 5px 15px;
+  color: white;
+  transition: 0.5s;
+}
+
+footer .button:hover {
+  background-color: #ff6900;
+}
+
+.copyright {
+  background-color: #08003c;
+  height: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright p {
+  font-family: "Alumni Sans", sans-serif;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 980px) {
+  /*BANNER*/
+  .textbox h1 {
+    font-size: 50px;
+  }
+
+  .textbox p {
+    font-size: 25px;
+  }
+
+  /*About*/
+  .about {
+    padding: 30px;
+  }
+  .about .image {
+    background-position: top;
+    height: 300px;
+    margin-bottom: 10px;
+  }
+
+  .about h2 {
+    font-size: 40px;
+  }
+
+  .about h6 {
+    font-size: 22px;
+  }
+
+  /*Buy-sell*/
+
+  .buy-sell .card1 {
+    height: 250px;
+  }
+
+  .buy-sell .card2 {
+    height: 250px;
+  }
+
+  .buy-sell h2 {
+    font-size: 25px;
+  }
+
+  .buy-sell p {
+    font-size: 14px;
+  }
+
+  /*Products*/
+
+  .products {
+    padding: 30px 0;
+  }
+
+  /*Invetory-Slider*/
+
+  .inventory {
+    padding: 30px 0;
+  }
+
+  /*Logo-slider*/
+
+  .logo-slick img {
+    height: 40px;
+  }
+
+  /*WHY-US*/
+
+  .why-us {
+    padding: 30px 0;
+  }
+
+  .why-us h2 {
+    font-size: 40px;
+  }
+
+  .why-us h6 {
+    font-size: 22px;
+  }
+
+  /*TESTIMONIAL*/
+
+  .testimonials {
+    padding: 30px;
+  }
+
+  .testimonials h2 {
+    font-size: 40px;
+  }
+
+  .testimonials h6 {
+    font-size: 22px;
+  }
+
+  .testimonials .icon {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .testimonial .info p {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 790px) {
+  /*BANNER*/
+
+  .banner-holder {
+    height: 600px;
+  }
+
+  .textbox h1 {
+    font-size: 40px;
+  }
+
+  .textbox p {
+    font-size: 18px;
+  }
+
+  .textbox .button {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+
+  /*TESTIMONIALS*/
+
+  .testimonials .image {
+    margin-bottom: 5px;
+  }
+
+  .testimonials::before {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  /*BANNER*/
+
+  .banner-holder {
+    height: 400px;
+  }
+
+  .textbox h1 {
+    font-size: 30px;
+  }
+
+  .textbox p {
+    font-size: 16px;
+  }
+
+  .textbox .button {
+    font-size: 16px;
+    padding: 5px 10px;
+  }
+
+  /*BUY-SELL*/
+  .buy-sell {
+    padding: 20px 0;
+  }
+
+  /*FOOTER*/
+  .copyright p {
+    font-size: 14px;
+  }
+}

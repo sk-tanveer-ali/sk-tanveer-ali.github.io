@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --background-color-dark_mode: #232946;
+  --headline-color-dark_mode: #fffffe;
+  --paragraph-color-dark_mode: #b8c1ec;
+  --button-color-dark_mode: #eebbc3;
+  --button-text-color-dark_mode: #232946;
+  --link-color-dark_mode: ;
+
+
+  --stroke-color-dark_mode: #121629;
+  --main-color-dark_mode: #b8c1ec;
+  --highlight-color-dark_mode: #eebbc3;
+  --primary-color-dark_mode: #fffffe;
+  --secondary-color-dark_mode: #eebbc3;
+
+
+  --background-color: #d4d8f0;
+  --headline-color: #232946;
+  --paragraph-color: #232946;
+  --card-background-color: #fffffe;
+  --button-color: #eebbc3;
+  --button-text-color: #232946;
+  --link-color: #232946;
+
+
+  --stroke-color: #121629;
+  --main-color: #b8c1ec;
+  --highlight-color: #eebbc3;
+  --primary-color: #fffffe;
+  --secondary-color: #eebbc3;
+
+  /* margins */
+  --small-margin: 10px;
+  --medium-margin: 15px;
+  --large-margin: 20px;
+  --extra-large-margin: 30px;
+
+  /* transition */
+  --transition: all .3s;
+}
+
+section {
+  padding-bottom: 6.5em;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-top: var(--medium-margin);
+}
+
+form {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-grid {
+  display: grid;
+  align-items: center;
+  margin-bottom: var(--medium-margin);
+}
+
+.audio-block {
+  background-color: var(--primary_color_dark);
+  border-radius: 5px;
+  padding: 5px 5px;
+  width: 250px;
+  max-height: 170px;
+}
+
+.audio-drop-area {
+  border-radius: 5px;
+}
+
+.audio-drop-label {
+  color: var(--headline-color);
+}
+
+.audio-drop {
+  padding: 50px 50px;
+  color: white;
+  background-color: transparent;
+  border: 1px dashed white;
+}
+
+input {
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid black;
+  margin-bottom: var(--medium-margin);
+  padding: 0 5px;
+
+}
+
+textarea {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: var(--medium-margin);
+  padding: 5px 5px;
+}
+
+#selectOption {
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  margin-bottom: var(--extra-large-margin);
+}
+
+.thumbnail p {
+  margin-bottom: var(--medium-margin);
+  max-width: 90%;
+}
+
+#thumbnailDropArea {
+  max-width: 90%;
+  min-height: 200px;
+  border: 1px dashed black;
+  border-radius: 10px;
+  padding: 5px 5px;
+  margin-bottom: var(--extra-large-margin);
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#thumbnailPreview {
+  max-width: 100%;
+  max-height: 100%;
+  padding: 5px 5px;
+
+}
+
+.category {
+  margin-bottom: var(--extra-large-margin);
+}
+
+.category h2 {
+  margin-bottom: var(--small-margin);
+}
+
+#categoryDropdown {
+  border-radius: 5px;
+  padding: 5px 20px;
+}
+
+#upload-btn {
+  width: 50%;
+  padding: 5px 10px;
+  background-color: var(--button-color);
+  margin-bottom: var(--medium-margin);
+  transition: var(--transition);
+}
+
+input[type="submit"],
+input[type="button"] {
+  color: var(--button-text-color);
+  padding: var(--padding_xsmall) var(--padding_medium) var(--padding_xsmall) var(--padding_medium);
+  border-radius: 8px;
+  font-size: clamp(var(--min-text-font-size), var(--preferred-text-font-size), var(--max-text-font-size));
+  box-shadow: var(--box-shadow);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+#upload-btn:nth-of-type(3) {
+  background-color: var(--primary-color);
+}
+
+#upload-btn:hover,
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: #a8d6c3;
+}
+
+.arrow-btn {
+  text-transform: capitalize;
+  font-size: 1rem;
+  margin-left: var(--margin_small);
+}
+
+.arrow-btn i {
+  transform: translateX(-5px);
+  transition: var(--transition);
+}
+
+.arrow-btn:hover i {
+  transform: translateX(0);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 768px) {
+  section {
+    padding-bottom: 1.5em;
+  }
+
+  .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--large-margin);
+  }
+
+  .thumbnail p {
+    max-width: 50%;
+  }
+
+  #thumbnailDropArea {
+    max-width: 50%;
+  }
+
+}
+
+@media screen and (min-width: 865px) {
+  .form-grid {
+    gap: var(--extra-large-margin);
+  }
+}
