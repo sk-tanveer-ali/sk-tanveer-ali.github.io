@@ -11,6 +11,9 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  body {
+    overflow-x: hidden;
+  }
 }
 
 :root {
@@ -34,11 +37,11 @@ section {
   padding: 50px 0;
 }
 
-.container {
+/* .container {
   max-width: 1200;
   width: 80%;
   margin: 0 auto;
-}
+} */
 
 /************************** HEADER ***********************/
 
@@ -100,7 +103,7 @@ section {
   position: relative;
 }
 
-.banner::before {
+/* .banner::before {
   content: "";
   position: absolute;
   top: 0;
@@ -109,7 +112,7 @@ section {
   height: 100vh;
   background-color: var(--primary-color);
   transform: skewX(-40deg);
-}
+} */
 
 .text-box {
   text-align: left;
@@ -436,6 +439,11 @@ section {
 }
 
 @media (max-width: 1050px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
   .banner::before {
     right: 400px;
   }
@@ -516,5 +524,12 @@ section {
 
   .projects .container {
     width: 90%;
+  }
+}
+
+
+@media (max-width: 768px){
+  body {
+    overflow-x: hidden;
   }
 }
