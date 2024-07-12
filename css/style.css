@@ -289,7 +289,7 @@ section {
   height: 250px;
   width: 350px;
   border: 2px solid white;
-  background-image: url(../assets/images/workout.png);
+  background-image: url(../assets/images/evrivals.png);
   background-size: cover;
 }
 
@@ -297,7 +297,7 @@ section {
   height: 250px;
   width: 350px;
   border: 2px solid white;
-  background-image: url(../assets/images/autoadis.png);
+  background-image: url(../assets/images/workout.png);
   background-size: cover;
 }
 
@@ -305,7 +305,23 @@ section {
   height: 250px;
   width: 350px;
   border: 2px solid white;
+  background-image: url(../assets/images/autoadis.png);
+  background-size: cover;
+}
+
+.projects .project6 .thumbnail {
+  height: 250px;
+  width: 350px;
+  border: 2px solid white;
   background-image: url(../assets/images/brewedawekening.png);
+  background-size: cover;
+}
+
+.projects .project7 .thumbnail {
+  height: 250px;
+  width: 350px;
+  border: 2px solid white;
+  background-image: url(../assets/images/exclusia.png);
   background-size: cover;
 }
 

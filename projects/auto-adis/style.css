@@ -32,12 +32,13 @@ body {
 
 .nav-link {
   font-family: "Alumni Sans", sans-serif;
-  font-size: 20px;
+  font-size: 25px;
+  margin-right: 10px;
   color: white;
 }
 
 .nav-link:hover {
-  color: #ff6900;
+  color: #ff6900 !important;
 }
 
 /*******MAIN_BANNER*******/
