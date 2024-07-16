@@ -11,9 +11,6 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  body {
-    overflow-x: hidden;
-  }
 }
 
 :root {
@@ -37,11 +34,11 @@ section {
   padding: 50px 0;
 }
 
-/* .container {
+.container {
   max-width: 1200;
   width: 80%;
   margin: 0 auto;
-} */
+}
 
 /************************** HEADER ***********************/
 
@@ -95,24 +92,13 @@ section {
 
 /************************** BANNER ***********************/
 .banner {
-  background: url("../assets/images/banner.jpg") rgba(0, 0, 0, 0.2);
+  background: url("../assets/images/banner.jpg") rgba(0, 0, 0, 0.6);
   background-position: center;
   background-size: cover;
   background-blend-mode: overlay;
-  height: 100vh;
+  height: 80vh;
   position: relative;
 }
-
-/* .banner::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 650px;
-  width: 100%;
-  height: 100vh;
-  background-color: var(--primary-color);
-  transform: skewX(-40deg);
-} */
 
 .text-box {
   text-align: left;
@@ -188,10 +174,12 @@ section {
 
 .about .right {
   width: 50%;
+  padding: 0 10px 0 0;
 }
 
 .about .right .skills {
-  display: flex;
+  display: wrap;
+  flex-wrap: wrap;
   justify-content: left;
   align-items: center;
   gap: 10px;
@@ -350,7 +338,7 @@ section {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: white;
+  color: var(--text-color2);
   background-color: var(--text-color1);
   font-size: 18px;
   padding: 5px 10px;
@@ -439,11 +427,6 @@ section {
 }
 
 @media (max-width: 1050px) {
-
-  body {
-    overflow-x: hidden;
-  }
-
   .banner::before {
     right: 400px;
   }
@@ -510,12 +493,10 @@ section {
     display: block;
   }
 
-  .banner::before {
-    right: 200px;
-  }
 }
 
 @media (max-width: 600px) {
+
   .about .right .skills {
     flex-wrap: wrap;
     justify-content: center;
@@ -524,12 +505,5 @@ section {
 
   .projects .container {
     width: 90%;
-  }
-}
-
-
-@media (max-width: 768px){
-  body {
-    overflow-x: hidden;
   }
 }
