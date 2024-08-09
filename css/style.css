@@ -199,6 +199,13 @@ section {
   font-family: "Roboto", sans-serif;
 }
 
+.about .right a{
+  color: var(--text-color3);
+}
+.about .right a:hover{
+  color: var(--text-color1);
+}
+
 .about .right h3 {
   color: var(--header-color);
   font-size: 30px;
@@ -313,6 +320,14 @@ section {
   width: 350px;
   border: 2px solid white;
   background-image: url(../assets/images/exclusia.png);
+  background-size: cover;
+}
+
+.projects .project8 .thumbnail {
+  height: 250px;
+  width: 350px;
+  border: 2px solid white;
+  background-image: url(../assets/images/balancedlocus.png);
   background-size: cover;
 }
 
