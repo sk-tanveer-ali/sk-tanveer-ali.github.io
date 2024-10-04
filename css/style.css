@@ -96,31 +96,60 @@ section {
   background-position: center;
   background-size: cover;
   background-blend-mode: overlay;
+  background-attachment: fixed;
   height: 80vh;
   position: relative;
 }
 
 .text-box {
+  position: absolute;
   text-align: left;
   color: white;
-  position: absolute;
   left: 20%;
   top: 40%;
 }
 
 .text-box h1 {
+  animation: 1s h1 ease-out;
+  position: absolute;
   font-family: "Alumni Sans", sans-serif;
   font-size: 60px;
+  width: 200px;
+}
+
+@keyframes h1{
+  from{
+    transform: translateX(-500px);
+  }
+  to{
+    transform: translateX(0px);
+  }
 }
 
 .text-box h3 {
+  animation: 1s h3 ease-out;
+  position: absolute;
+  top: 65px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
+  width: 500px;
   color: var(--text-color1);
   margin-bottom: 30px;
 }
 
+@keyframes h3{
+  from{
+    transform: translateX(-500px);
+  }
+  to{
+    transform: translateX(0px);
+  }
+}
+
 .text-box a {
+  animation: 1.5s resume-btn linear;
+  position: absolute;
+  top:100px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: oblique;
@@ -131,6 +160,15 @@ section {
   color: var(--text-color2);
   border: 2px solid transparent;
   transition: 0.5s;
+}
+
+@keyframes resume-btn{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 .text-box a:hover {
@@ -436,7 +474,7 @@ section {
   transition: 0.3s;
 }
 
-/******BREAKPOINTS********/
+/************************** BREAKPOINTS ***********************/
 
 @media (max-width: 1200px) {
 }
@@ -507,10 +545,18 @@ section {
   .navbar a {
     display: block;
   }
-
 }
 
 @media (max-width: 600px) {
+
+  .text-box h3 {
+    top: 70px;
+    width: 220px;
+  }
+  
+  .text-box a {
+    top: 130px;
+  }
 
   .about .right .skills {
     flex-wrap: wrap;
