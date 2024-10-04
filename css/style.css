@@ -549,9 +549,13 @@ section {
 
 @media (max-width: 600px) {
 
+  .text-box h1{
+    width: 230px;
+  }
+
   .text-box h3 {
     top: 70px;
-    width: 220px;
+    width: 230px;
   }
   
   .text-box a {
