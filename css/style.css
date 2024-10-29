@@ -117,11 +117,12 @@ section {
   width: 200px;
 }
 
-@keyframes h1{
-  from{
+@keyframes h1 {
+  from {
     transform: translateX(-500px);
   }
-  to{
+
+  to {
     transform: translateX(0px);
   }
 }
@@ -137,11 +138,12 @@ section {
   margin-bottom: 30px;
 }
 
-@keyframes h3{
-  from{
+@keyframes h3 {
+  from {
     transform: translateX(-500px);
   }
-  to{
+
+  to {
     transform: translateX(0px);
   }
 }
@@ -149,7 +151,7 @@ section {
 .text-box a {
   animation: 1.5s resume-btn linear;
   position: absolute;
-  top:100px;
+  top: 100px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: oblique;
@@ -162,11 +164,12 @@ section {
   transition: 0.5s;
 }
 
-@keyframes resume-btn{
-  from{
+@keyframes resume-btn {
+  from {
     opacity: 0;
   }
-  to{
+
+  to {
     opacity: 1;
   }
 }
@@ -237,10 +240,11 @@ section {
   font-family: "Roboto", sans-serif;
 }
 
-.about .right a{
+.about .right a {
   color: var(--text-color3);
 }
-.about .right a:hover{
+
+.about .right a:hover {
   color: var(--text-color1);
 }
 
@@ -251,6 +255,7 @@ section {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
 .skills {
   display: flex;
   gap: 10px;
@@ -408,18 +413,23 @@ section {
   0% {
     transform: skewY(-10deg);
   }
+
   5% {
     transform: skewY(10deg);
   }
+
   10% {
     transform: skewY(-10deg);
   }
+
   15% {
     transform: skewY(10deg);
   }
+
   20% {
     transform: skewY(0deg);
   }
+
   100% {
     transform: skewY(0deg);
   }
@@ -476,8 +486,7 @@ section {
 
 /************************** BREAKPOINTS ***********************/
 
-@media (max-width: 1200px) {
-}
+@media (max-width: 1200px) {}
 
 @media (max-width: 1050px) {
   .banner::before {
@@ -549,7 +558,7 @@ section {
 
 @media (max-width: 600px) {
 
-  .text-box h1{
+  .text-box h1 {
     width: 230px;
   }
 
@@ -557,7 +566,7 @@ section {
     top: 70px;
     width: 300px;
   }
-  
+
   .text-box a {
     top: 130px;
   }
