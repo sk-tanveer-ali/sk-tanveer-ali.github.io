@@ -20,7 +20,7 @@ body {
   margin: 0 auto;
 }
 
-/**********NAV-BAR***********/
+/**********NAV-BAR*************/
 
 .navbar {
   background-color: #08003c !important;
@@ -215,9 +215,12 @@ body {
 /* styles.css */
 
 .shape-box {
-  width: 200px; /* Adjust the width as needed */
-  height: 100px; /* Adjust the height as needed */
-  background-color: #007bff; /* Background color for the trapezoid side */
+  width: 200px;
+  /* Adjust the width as needed */
+  height: 100px;
+  /* Adjust the height as needed */
+  background-color: #007bff;
+  /* Background color for the trapezoid side */
   position: relative;
 }
 
@@ -704,6 +707,7 @@ footer .button:hover {
 }
 
 @media only screen and (max-width: 980px) {
+
   /*BANNER*/
   .textbox h1 {
     font-size: 50px;
@@ -717,6 +721,7 @@ footer .button:hover {
   .about {
     padding: 30px;
   }
+
   .about .image {
     background-position: top;
     height: 300px;
